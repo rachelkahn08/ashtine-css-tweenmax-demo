@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.parent-container {
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	/*default: flex-direction: row;*/
+		/*other options: row-reverse, column, column-reverse
+		flex froggy for visual on how those work*/
+	flex-wrap: wrap;
+		/*also nowrap, wrap-reverse*/
+}
+
+.noshrink {
+	min-width: 80%;
+}
+
+.child-container {
+	flex: 1 100px;
+	height: 100px;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.yellow {
+	background-color: yellow;
+	flex: 2 100px;
+}
+
+.work-container {
+	background-color: black;
+	margin: 10px;
+	flex: 0 0 200px;
+	height: 200px;
+}
+
+.work-container {
+	display: none;
+}
